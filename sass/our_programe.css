@@ -1,0 +1,28 @@
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: rgba(199, 113, 139, 0.9);
+}
+
+h4 {
+  color: #ff6b09;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.programe-wrapper p {
+  color: #b9b9b9;
+}
+
+.programe-wrapper h3 {
+  color: #ffffff;
+}
+
+.benefits p {
+  color: #111518;
+}
+/*# sourceMappingURL=our_programe.css.map */

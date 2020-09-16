@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(199, 113, 139, 0.9);
+}
+
+h4 {
+  color: $title-text-color;
+}
+
+h2 {
+  color: $title-text-white-color;
+}
+
+.programe-wrapper {
+  p {
+    color: $text-color;
+  }
+  h3 {
+    color: $title-text-white-color;
+  }
+}
+
+.benefits {
+  p {
+    color: $text-dark-color;
+  }
+}
