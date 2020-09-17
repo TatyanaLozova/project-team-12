@@ -71,6 +71,13 @@ ul {
   background: transparent;
   padding-left: 48px;
 }
+.contact-list-item {
+  .contact-tel {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
@@ -86,9 +93,7 @@ ul {
         rgba(17, 21, 24, 0.7),
         rgba(17, 21, 24, 0.7)
       ),
-
       url(../images/footer-mobile.jpg);
-
   }
 
   .footer-title {
@@ -135,7 +140,7 @@ ul {
     color: #ffffff;
   }
   .copyright-box {
-    padding-top: 21px;
+    padding-top: 22px;
     padding-bottom: 21px;
     padding-left: 52px;
     padding-right: 51px;
@@ -178,9 +183,7 @@ ul {
         rgba(17, 21, 24, 0.7),
         rgba(17, 21, 24, 0.7)
       ),
-
       url(../images/footer-tablet.jpg);
-
   }
 
   .footer-title {
@@ -200,9 +203,10 @@ ul {
   .contact-form-input {
     width: 390px;
   }
-  .contact-list {
+  .contact-box {
     display: flex;
     justify-content: flex-start;
+    align-content: center;
     margin: 0 auto;
   }
   .contact-box {
@@ -217,6 +221,21 @@ ul {
   .contact-list-item:not(:last-child) {
     margin-bottom: 0;
   }
+
+  .contact-list-item {
+    .contact-tel {
+      margin-left: 237px;
+    }
+  }
+  .contact-list-item {
+    .sign-instagram {
+      margin-left: 48px;
+    }
+  }
+  .contact-tel {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 @media screen and (min-width: 1680px) {
   .container {
@@ -230,9 +249,7 @@ ul {
           rgba(17, 21, 24, 0.7),
           rgba(17, 21, 24, 0.7)
         ),
-
         url(../images/footer-desktop.jpg);
-
     }
   }
   .footer-title {
@@ -260,5 +277,14 @@ ul {
     font-weight: 800;
     font-size: 14px;
     line-height: 1.21;
+  }
+  .contact-list-item {
+    .logo {
+      margin-left: 183px;
+    }
+  }
+  .contact-tel {
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
