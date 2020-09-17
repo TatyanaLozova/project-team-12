@@ -1,37 +1,15 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::befor,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-.list {
-  list-style: none;
-  margin: 0px;
-}
-
 .solut-section {
   margin-right: auto;
   margin-left: auto;
   font-family: Montserrat;
 }
-
 .solut-conteiner {
   position: relative;
+
   padding-left: 20px;
   padding-bottom: 367px;
-  background-color: #111518;
-  color: #ffffff;
+  background-color: $title-text-color;
+  color: $white-text-color;
   font-family: Montserrat;
   font-weight: 800;
   font-size: 20px;
@@ -40,26 +18,23 @@ html {
 }
 
 .list.solut {
-  background-color: #ffffff;
+  background-color: $white-text-color;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.08em;
-  color: #111518;
+  color: $title-text-color;
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 14px;
 }
-
 ul.list.solut {
   position: absolute;
   max-width: 280px;
   width: 100%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
-/*# sourceMappingURL=main.css.map */
