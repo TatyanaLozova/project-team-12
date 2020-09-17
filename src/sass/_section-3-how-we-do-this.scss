@@ -12,6 +12,7 @@ html {
   box-sizing: inherit;
   outline-color: $accent;
 }
+body,
 h2,
 h3,
 p,
@@ -25,7 +26,6 @@ svg {
 }
 //styles
 .how {
-  padding: 0 20px;
   font-family: 'Montsserat', sans-serif;
   font-size: 12px;
   line-height: 1.67;
@@ -35,20 +35,20 @@ svg {
   background-color: #fefefe;
   ul {
     list-style: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1314px) {
+    }
   }
   li {
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 15px 0;
+    padding: 30px 0 0;
     max-width: 280px;
     min-height: 280px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    & + li {
-      margin-top: 15px;
-    }
-    &:first-child {
-      margin-top: 30px;
-    }
     &:hover,
     &:focus {
       background-color: $accent;
@@ -63,22 +63,72 @@ svg {
     &:focus svg {
       fill: white;
     }
+    @media screen and (max-width: 768px - 1px) {
+      & + li {
+        margin-top: 15px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      padding: 40px 15px 0;
+      // max-width: 334px;
+      min-height: 334px;
+      // margin-left: calc((100% - 334px * 2) / 4);
+      // margin-right: calc((100% - 334px * 2) / 4);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1314px - 1px) {
+      &:nth-child(n + 3) {
+        margin-top: 27px;
+      }
+    }
+    @media screen and (min-width: 1314px) {
+      padding: 40px 30px 0;
+      max-width: 425px;
+      min-height: 396px;
+      margin-left: calc((100% - 425px * 3) / 6);
+      margin-right: calc((100% - 425px * 3) / 6);
+      &:nth-child(n + 4) {
+        margin-top: 20px;
+      }
+    }
   }
   h2 {
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 1.3;
     font-weight: 700;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1314px) {
+      margin-bottom: 50px;
+      font-size: 46px;
+      text-align: start;
+    }
   }
   h3 {
-    margin: 20px 0 20px;
+    margin: 20px 0 15px;
     font-size: 14px;
     line-height: 1.4;
     font-weight: 700;
+    @media screen and (min-width: 768px) {
+      margin: 30px 0 25px;
+    }
+    @media screen and (min-width: 1314px) {
+      margin: 30px 0 15px;
+      font-size: 20px;
+    }
   }
   p {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 500;
     color: $secondary;
+    @media screen and (min-width: 768px) {
+      margin-top: 25px;
+    }
+    @media screen and (min-width: 1314px) {
+      margin-top: 15px;
+      font-size: 18px;
+    }
   }
   svg {
     margin-left: auto;
