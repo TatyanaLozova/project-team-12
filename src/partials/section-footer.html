@@ -41,9 +41,7 @@
         <label for="user-tel" class="contact-form-label"></label>
       </div>
       <button class="btn-footer" type="submit">
-
-        хочу  на бесплатное занятие
-
+        хочу на бесплатное занятие
       </button>
     </form>
   </div>
@@ -51,10 +49,21 @@
     <ul class="contact-list">
       <li class="contact-list-item">
         <a class="logo" href="./index.html" aria-label="Логотип">
+          <picture class="team-photo img">
+            <source
+              srcset="../image/logo84.jpg 320w, ../image/logo84@2x.jpg 640w"
+              media="(max-width: 767px)"
+              sizes="(max-width: 767px) 320px, 90vw, 100vw"
+            />
+            <source
+              srcset="../image/logo128.jpg 768w, ../image/logo128@2x.jpg 1536w"
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 768px, 
+                (min-width: 800px) 90vw, 100vw"
+            />
 
-
-          <img src="../images/logo.png" alt="Логотип" />
-
+            <img src="../images/logo-default.jpg" alt="Логотип" />
+          </picture>
         </a>
       </li>
       <li class="contact-list-item">
@@ -67,9 +76,7 @@
       </li>
       <li class="contact-list-item">
         <a class="sign-instagram" href="">
-
-          <img src="../images/instagram.svg" alt="" />
-
+          <img src="./image/instagram.svg" alt="" />
         </a>
       </li>
     </ul>
