@@ -1,9 +1,10 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
+@import './base/normalize';
 @import './utils/variables';
 @import './base/common';
 @import './layouts/_section_2_solution';
+@import './section-3-how-we-do-this.scss';
+
+
+
+
+
