@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <picture>
-      <source srcset="./images/Ellipse2-desktop.jpg 1x, ./images/Ellipse2@2x.jpg 2x"
-        media="(min-width: 1200px)"/>
-        <picture>
+
+    <section class="teacher" id="about-us">
+  <div class="container">
+    <h2 class="heading-section teacher__title">Преподаватель</h2>
+    <div class="teacher-wrapper">
+      <div class="teacher__name">
+
+   
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/section2.html"></include>
 
@@ -21,3 +30,4 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
