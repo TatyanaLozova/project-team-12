@@ -24,24 +24,31 @@
     position: relative;
 }
 
-.nav{
-  display: flex;
+@media screen and (max-width: 767px) {
+  .nav{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+  }
 }
+
+
 
 .logo {
   display: block;
 }
 
-.header-section {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .header-section {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 77px;
+  }
 }
+
 
 .header__block {
   width: 280px;
@@ -123,6 +130,20 @@
     position: absolute;
 }
 
-.icons1::before {
-  background-image: url(../images/);
+.header-skills__item::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+.icons1::before {
+  background-image: url(../images/adapt.png);
+}
+
+
