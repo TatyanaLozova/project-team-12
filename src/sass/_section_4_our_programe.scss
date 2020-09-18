@@ -191,6 +191,19 @@ letter-spacing: 0.08em;
 }
 }
 
+.line-wrap{
+  position: relative;
+  }
+  
+  .line{
+    height: 2px;
+    width: 900px;
+    background-color:$title-text-white-color;
+    position: absolute;
+    top: 464px;
+    left: -382px;
+      transform: rotate(90deg);
+  }
 
 .benefits{
   position: relative;
