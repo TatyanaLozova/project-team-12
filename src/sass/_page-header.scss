@@ -4,19 +4,19 @@
   box-sizing: inherit;
 }
 
-@media screen and (max-width: 767px) {
+ 
   .container {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
   }
-}
+
 
 .header {
   padding-top: 26px;
     padding-bottom: 50px;
-    background-image: url(../images/vectorheader.png);
+    background-image: url(#);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,24 +24,40 @@
     position: relative;
 }
 
-.nav{
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
 .logo {
   display: block;
 }
 
-.header-section {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+
+.nav__list {
+  display: none;
+}
+
+.menu-link{
+  border: 0;
+    background: 0 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header-section {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 77px;
+  }
 }
+
 
 .header__block {
   width: 280px;
@@ -83,7 +99,7 @@
     width: 250px;
     height: 48px;
     border: 0;
-    background: #ff6b08;
+    background:$accent-color;
     font-family: 'MontserratB',sans-serif;
     font-size: 11px;
     line-height: 48px;
@@ -100,4 +116,44 @@
     list-style: none;
     padding: 0 40px;
 }
+
+.header-skills__item {
+  display: inline-block;
+    position: relative;
+    min-height: 60px;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.header-skills__item:nth-child(-n+2) {
+  margin-bottom: 30px;
+}
+
+.header-skills__title {
+  font-size: 13px;
+    line-height: 20px;
+    color: #18191d;
+    font-family: 'MontserratB',sans-serif;
+    padding-left: 68px;
+    margin: 0;
+    position: absolute;
+}
+
+.header-skills__item::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icons1::before {
+  background-image: url(#);
+}
+
+
 
