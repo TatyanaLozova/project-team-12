@@ -16,12 +16,16 @@
 .header {
   padding-top: 26px;
     padding-bottom: 50px;
-    background-image: url(../images/vectorheader.png);
+    background-image: url(./images/vectorheader.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -300px;
     position: relative;
+}
+
+.logo {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
@@ -33,10 +37,8 @@
   }
 }
 
-
-
-.logo {
-  display: block;
+.nav__list {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -143,7 +145,7 @@
 }
 
 .icons1::before {
-  background-image: url(../src/images/adapt.png);
+  background-image: url(#);
 }
 
 
