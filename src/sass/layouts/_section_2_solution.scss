@@ -1,40 +1,131 @@
 .solut-section {
+  background-color: $title-text-color;
   margin-right: auto;
   margin-left: auto;
-  font-family: Montserrat;
-}
-.solut-conteiner {
-  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 180px;
+  max-width: 1680px;
+  height: 545px;
 
-  padding-left: 20px;
-  padding-bottom: 367px;
-  background-color: $title-text-color;
-  color: $white-text-color;
-  font-family: Montserrat;
+  @media screen and (min-width: 768px) {
+    height: 340px;
+  }
+  @media screen and (min-width: 1680px) {
+    height: 560px;
+  }
+}
+.text-accent {
+  color: $accent-color;
+}
+
+.solut-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.35;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.31;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 46px;
+  }
+}
+
+.solut-conteiner {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $white-text-color;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-top: 60px;
+    padding-left: 42px;
+    padding-right: 158px;
+  }
+  @media screen and (min-width: 1680px) {
+    width: 1680px;
+    padding-top: 100px;
+    padding-left: 183px;
+    padding-right: 631px;
+  }
 }
 
 .list.solut {
-  background-color: $white-text-color;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.43;
-  letter-spacing: 0.08em;
-  color: $title-text-color;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 14px;
-}
-ul.list.solut {
   position: absolute;
   max-width: 280px;
   width: 100%;
-  top: 50%;
+  top: 205px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  background-color: $white-text-color;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+  padding: 20px 14px 20px 30px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 668px;
+    width: 100%;
+    top: 189px;
+    padding: 30px 47px 26px 96px;
+
+    line-height: 1.4;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1680px) {
+    max-width: 1314px;
+    width: 100%;
+    top: 348px;
+    font-size: 20px;
+    padding: 70px 112px 62px 114px;
+  }
+}
+
+.solut-item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2);
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1680px) {
+    flex-basis: calc(100% / 3);
+  }
+}
+
+.solut-number {
+  color: $accent-color;
+  display: flex;
+  align-items: center;
+  line-height: 1.21;
+
+  &:before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: $accent-color;
+    text-align: center;
+    margin-right: 9px;
+  }
+}
+
+.solut-item:not(:last-child) {
+  margin-bottom: 10px;
 }
