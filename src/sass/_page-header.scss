@@ -16,7 +16,7 @@
 .header {
   padding-top: 26px;
     padding-bottom: 50px;
-    background-image: url(./images/vectorheader.png);
+    background-image: url(#);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,17 +28,23 @@
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+
   .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
   }
-}
+
 
 .nav__list {
   display: none;
+}
+
+.menu-link{
+  border: 0;
+    background: 0 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -92,7 +98,7 @@
     width: 250px;
     height: 48px;
     border: 0;
-    background: #ff6b08;
+    background:$accent-color;
     font-family: 'MontserratB',sans-serif;
     font-size: 11px;
     line-height: 48px;
@@ -147,5 +153,6 @@
 .icons1::before {
   background-image: url(#);
 }
+
 
 
