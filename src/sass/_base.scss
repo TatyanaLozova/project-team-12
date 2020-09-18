@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $main-font-family;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  margin: -1px;
+  font-size: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.br {
+  display: block;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+// br - break point
+// w  - width
+
+.container {
+  margin: 0 auto;
+  @media screen and (max-width: $mobile-bp-max) {
+    // width: 100%;
+    width: $mobile-w-min;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    width: $tablet-w;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    width: $desktop-w;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    width: $ladge-desktop-w;
+  }
+}
+
+.display-none {
+  display: none;
+}
