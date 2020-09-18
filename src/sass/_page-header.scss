@@ -101,3 +101,28 @@
     padding: 0 40px;
 }
 
+.header-skills__item {
+  display: inline-block;
+    position: relative;
+    min-height: 60px;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.header-skills__item:nth-child(-n+2) {
+  margin-bottom: 22px;
+}
+
+.header-skills__title {
+  font-size: 13px;
+    line-height: 20px;
+    color: #18191d;
+    font-family: 'MontserratB',sans-serif;
+    padding-left: 68px;
+    margin: 0;
+    position: absolute;
+}
+
+.icons1::before {
+  background-image: url(../images/);
+}
