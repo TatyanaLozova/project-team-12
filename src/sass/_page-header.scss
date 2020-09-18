@@ -16,7 +16,7 @@
 .header {
   padding-top: 26px;
     padding-bottom: 50px;
-    background-image: url(../images/vectorheader.png);
+    background-image: url(./images/vectorheader.png);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,10 +36,6 @@
     margin-bottom: 50px;
   }
 }
-
-
-
-
 
 .nav__list {
   display: none;
@@ -149,7 +145,7 @@
 }
 
 .icons1::before {
-  background-image: url(../src/images/adapt.png);
+  background-image: url(#);
 }
 
 
