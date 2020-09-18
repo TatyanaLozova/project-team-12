@@ -2,7 +2,7 @@
 $primary: #111518;
 $accent: #ff6b09;
 $secondary: #b9b9b9;
-//utils
+// styles
 html {
   box-sizing: border-box;
 }
@@ -10,21 +10,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline-color: $accent;
 }
-body,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-svg {
-  display: block;
-}
-//styles
 .how {
   font-family: 'Montsserat', sans-serif;
   font-size: 12px;
@@ -33,7 +19,23 @@ svg {
   text-align: center;
   color: $primary;
   background-color: #fefefe;
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    color: $primary;
+  }
+  svg {
+    display: block;
+  }
   div {
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 10px 0;
     max-width: 1314px;
   }
@@ -51,7 +53,7 @@ svg {
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0 0;
-    max-width: 280px;
+    width: 100%;
     min-height: 280px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     &:hover,
@@ -77,7 +79,7 @@ svg {
     }
     @media screen and (min-width: 768px) {
       padding: 40px 15px 0;
-      flex: 0 0 calc(50% - 10px);
+      flex: 0 0 calc((100% - 20px) / 2);
     }
     @media screen and (min-width: 768px) and (max-width: 1314px - 1px) {
       &:nth-child(n + 3) {
@@ -86,6 +88,7 @@ svg {
     }
     @media screen and (min-width: 1314px) {
       padding: 40px 30px 0;
+      flex: 0 0 calc((100% - 20px * 2) / 3);
       &:nth-child(n + 4) {
         margin-top: 20px;
       }
