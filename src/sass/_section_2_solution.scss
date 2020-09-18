@@ -1,4 +1,5 @@
 .solut-section {
+  position: relative;
   background-color: $title-text-color;
   margin-right: auto;
   margin-left: auto;
@@ -34,7 +35,6 @@
 }
 
 .solut-conteiner {
-  position: relative;
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
