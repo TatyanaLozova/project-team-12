@@ -203,7 +203,7 @@ ul {
   .contact-form-input {
     width: 390px;
   }
-  .contact-box {
+  .contact-list {
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -214,17 +214,26 @@ ul {
     padding-bottom: 40px;
   }
   .contact-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .logo {
       margin-left: 40px;
     }
-  }
-  .contact-list-item:not(:last-child) {
-    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .icon-phone {
+      margin-right: 10px;
+    }
   }
 
   .contact-list-item {
     .contact-tel {
       margin-left: 237px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .contact-list-item {
@@ -283,8 +292,17 @@ ul {
       margin-left: 183px;
     }
   }
+  .contact-list-item {
+    .contact-tel {
+      margin-left: 290px;
+    }
+  }
   .contact-tel {
     font-size: 30px;
     line-height: 1.23;
+  }
+  .contact-box {
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 }
