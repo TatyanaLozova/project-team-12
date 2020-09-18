@@ -24,6 +24,10 @@
     position: relative;
 }
 
+.logo {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .nav{
     display: flex;
@@ -35,8 +39,10 @@
 
 
 
-.logo {
-  display: block;
+
+
+.nav__list {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
