@@ -81,8 +81,12 @@
   margin-bottom: 77px;
 }
 
-
-
+@media screen and (win-wdth: 768px) {
+  .header-photo {
+    width: 368px;
+    margin: 0;
+  }
+}
 
 .header__block {
     width: 280px;
@@ -114,8 +118,8 @@
     line-height: 18px;
     color: #18191d;
     font-family: 'MontserratB',sans-serif;
-    
 }
+  
 
 .header-subtitle-item {
   color: #FF6B09;
@@ -144,6 +148,7 @@
     justify-content: space-between;
     padding: 0;
   }
+}
 
 
 .header-skills {
@@ -176,20 +181,19 @@
     margin: 0;
     position: absolute;
 }
-@media screen and (max-width: 767px) {
-  .header__backdrop {
-    position: fixed;
-    max-width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(17, 21, 24, 0.9);
-    z-index: 100;
-    padding-top: 24px;
-    opacity: 0;
-    visibility: hidden;
-  }
+// @media screen and (max-width: 767px) {
+.header__backdrop {
+  position: fixed;
+  max-width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(17, 21, 24, 0.9);
+  z-index: 100;
+  padding-top: 24px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 
