@@ -19,6 +19,14 @@
     }
   }
 
+@media sreen and (min-width: 768px) {
+  .header {
+    padding-top: 34px;
+    padding-bottom: 52px;
+    
+  }
+}
+
 .header {
   padding-top: 26px;
     padding-bottom: 50px;
@@ -122,7 +130,7 @@
   
 
 .header-subtitle-item {
-  color: #FF6B09;
+  color: $accent-color;
 }
 
 .header__button {
